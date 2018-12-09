@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>exhibition</title>
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+	<style>
+		body {
+			margin: 0 auto;
+			padding: 0;
+			font-family: 'Gothic A1', sans-serif;
+		}
+		#header
+      {
+         width: 1700px;
+         height: 100px;
+         z-index: 3;
+      }
+      #header .menu
+      {   width: 800px;
+         height: 100px;
+         z-index: 2;
+      }
+      .title
+{
+   position: absolute;
+   top: 60px;
+   left: 200px;
+   transform: translate(-50%,-50%);
+   width: 300px;
+   height: 70px;
+   border: 1px solid #000;
+   padding: 20px;
+   box-sizing: border-box;
+   text-align: center;
+   box-shadow: 0 10px 15px rgba(0,0,0,.5);
+   overflow: hidden;
+}
+.title:before
+{
+   content: '';
+   position: absolute;
+   top:0;
+   left: 0;
+   width:100%;
+   height: 100%;
+   background: #000;
+   mix-blend-mode: difference;
+}
+.title:after
+{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: -50%;
+   width: 100%;
+   height: 100%;
+   background: #fff;
+   mix-blend-mode: difference;
+   transition: 2s;}
+.title:hover:after
+{
+   left:50%;
+}
+h4
+{
+   margin: 0 0 40px;
+   font-size: 1.3em;
+   padding: 0;
+   color: #fff;
+}
+      ul
+      {   margin-top: 20px;
+         position: absolute;
+         left: 1145px;
+         display: flex;
+         z-index: 3;
+      }
+      ul li
+      {
+         list-style: none;
+         padding:10px 30px; 
+      }   
+      ul li a
+      {
+         text-decoration: none;
+         text-transform: uppercase;
+         font-size: 1.1em;
+         color: #262626;
+         position: relative;
+      }
+      ul li a:before
+      {
+         content: '';
+         width: 10px;
+         height: 5px;
+         background: pink;
+         position: absolute;
+         top: 100%;
+         left:0;
+         transition: .5s;
+      }
+      ul li:hover a:before
+      {
+         width:50%;
+         transform: translateX(100%);
+      }
+		#textbox {
+			position: absolute;
+			top: 300px;
+			left: 150px;
+			width: 455px;
+		}
+		#textbox h1 {
+			font-size: 1em;
+		}
+		#art6 {
+			position: absolute;
+			top: 300px;
+			right: 150px;
+         width: 800px;
+		}
+      #footer{
+   position: absolute;
+   bottom:-800px;
+   left: 0px;
+   width: 100%;
+}
+h2 {
+   margin: 0;
+   padding: 0;
+   font-size: 0.5em
+}
+#footer2{
+   position: absolute;
+   bottom: -880px;
+   left: 0px;
+   width: 100%;
+}
+h3 {
+   margin: 0;
+   padding: 0;
+   font-size: 0.5em
+}	
+	</style>
+</head>
+<body>
+	<content>
+      <header>
+         <div class="title">
+      <h4>Exhibition Archive</h4>
+   </div>
+         <div class="menu">
+            <ul>
+               <li onclick="location.href=''"><a href="#">site?</a></li>
+               <li onclick="location.href=''"><a href="#">archive</a></li>
+               <li onclick="location.href=''"><a href="#">gallery</a></li>
+               <li onclick="location.href='https://leekyuri.github.io/11_project1/'"><a href="#">FAQ</a></li>
+            </ul>
+         </div>
+      </header>
+      <div class="box"></div>
+   </content>
+      </div>
+	<div id="textbox">
+		<h1>인세인 박展</h1>
+      <hr>
+		<h2>전시회</h2>
+		<p>2018.03.02. (금) ~ 2019.08.18. (일)<br>시간 : 12:00 ~ 18:00<br>장소 : 아라리오뮤지엄 동문모텔<br>요금 : 성인 10,000원 청소년 6,000원 어린이 4,000원<br>설명 : ‘Sexhibition'은 작가가 성(性)을 의미하는 ’Sex'와 전시회를 의미하는 ‘Exhibition'두 단어를 합쳐서 만든 단어입니다. 최근 작가가 주목하고 있는 사회적 현상인 남성혐오, 여성혐오와 같은 젠더 이슈를 비롯해 점차 가열화 되고 있는 남녀간의 집단적 대립현상을 주제로 한 작품들이 유머러스하고도 통쾌한 시선으로 소개됩니다. 작가는 이번 전시를 통해 온라인 등에서 수집한 포르노 영상을 편집한 영상과 직접 제작한 애니메이션을 보여줌으로써 자극적인 영상과 이미지 언어로 점철된 현대 매스미디어의 생태계를 신랄하게 풍자하고 있습니다.	</p>
+	</div>
+	<img src="a6.png" id="art6"/>
+   <div id="footer">
+      <center>
+         <h2>ⓒ2018 expber All rights reserved<br><br></h2>
+         <hr>
+      </center>
+   </div>
+   <div id="footer2">
+      <center>
+         <h3>PRIVACY POLICY　　　　　　　│　　　　　　　TERMS AND CONDITIONS　　　　　　　│　　　　　　　GET SUBSCRIBED<br><br>
+            이메일 문의　　　│　　　개인정보취급방침　　　│　　　권리 침해 신고　　　│　　　광고　　　│　　　모바일　　　│　　　 앱 설치<br><br><br><br>
+         </h3>
+      </center>
+   </div>   
+</body>
+</html>
